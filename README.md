@@ -159,11 +159,16 @@ Both interactive forms on the website use 100% custom Tailwind CSS interfaces co
 
 ---
 
-## Submission Checklist
-- [x] **Live Website Link** (GitHub Pages)
-- [x] **GitHub Repository Link**
-- [x] **VS Code Folder Structure Screenshot**
-- [x] **Hero / Front Section Screenshots** of each page:
+## Submission Links & Checklist
+- **Live Website Link (GitHub Pages):** [https://afeefulhussain.github.io/axon-website/](https://afeefulhussain.github.io/axon-website/)
+- **GitHub Repository Link:** [https://github.com/afeefulhussain/axon-website](https://github.com/afeefulhussain/axon-website)
+
+### Assignment Requirements Checklist:
+- [x] **Live Website Link** enabled via GitHub Pages
+- [x] **GitHub Repository** public & structured
+- [x] **VS Code Folder Structure** (`index.html`, `pages/`, `assets/`, `README.md`)
+- [x] **10+ Tailwind CSS UI Components per page**
+- [x] **All 5 Pages Functional**:
   - `Home` (`index.html`)
   - `About` (`pages/about.html`)
   - `Contact` (`pages/contact.html`)
