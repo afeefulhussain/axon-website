@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 01 Report - AXON Website | IMAC UET Lahore</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media print {
+      body {
+        background-color: white !important;
+        color: black !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+      .screenshot-box {
+        border: 2px dashed #9ca3af !important;
+        min-height: 220px;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans antialiased py-8 px-4 sm:px-6">
+
+  <!-- Print Instruction Bar (Hidden during Print) -->
+  <div class="max-w-4xl mx-auto mb-6 bg-zinc-900 text-white p-4 rounded-xl shadow-lg flex flex-col sm:flex-row items-center justify-between gap-3 no-print">
+    <div>
+      <h3 class="font-bold text-sm">Web Technologies Assignment 01 — Official Submission Document</h3>
+      <p class="text-xs text-gray-300">Click the button on the right or press <kbd class="bg-zinc-800 px-1.5 py-0.5 rounded border border-zinc-700">Ctrl + P</kbd> to save directly as a PDF.</p>
+    </div>
+    <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs px-5 py-2.5 rounded-lg shadow transition flex-shrink-0">
+      Print / Save as PDF
+    </button>
+  </div>
+
+  <!-- Main Report Container (A4 Style Paper) -->
+  <div class="max-w-4xl mx-auto bg-white border border-gray-200 shadow-sm rounded-xl p-8 sm:p-12 space-y-10">
+
+    <!-- ==========================================
+         COVER / TITLE HEADER
+    =========================================== -->
+    <header class="border-b-2 border-zinc-900 pb-8">
+      <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center space-x-3">
+          <img src="assets/logo.png" alt="AXON Emblem" class="h-12 w-auto object-contain">
+          <div>
+            <h1 class="text-2xl font-black text-zinc-900 tracking-tight">AXON TECHNICAL SOCIETY</h1>
+            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider">IMAC &bull; UET LAHORE</p>
+          </div>
+        </div>
+        <div class="text-right">
+          <span class="inline-block bg-zinc-900 text-white text-xs font-bold px-3 py-1 rounded">Assignment 01</span>
+          <p class="text-xs text-gray-500 mt-1">Total Marks: 30</p>
+        </div>
+      </div>
+
+      <h2 class="text-xl sm:text-2xl font-bold text-zinc-900 leading-snug">
+        Multi-Page Website Development Using HTML5 & Tailwind CSS
+      </h2>
+      <p class="text-sm text-gray-600 mt-1">
+        Course: Web Technologies | Institute of Machine Learning, Artificial Intelligence & Cyber Security (IMAC)
+      </p>
+
+      <!-- Student Credentials Table -->
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-50 p-4 rounded-lg border border-gray-200 text-xs">
+        <div>
+          <span class="text-gray-500 block font-medium">Student Name:</span>
+          <span class="font-bold text-zinc-900 text-sm">Afeef Ul Hussain</span>
+        </div>
+        <div>
+          <span class="text-gray-500 block font-medium">Roll Number / Student ID:</span>
+          <span class="font-bold text-zinc-900 text-sm">[Insert Your Roll Number / 2023-CS-XX]</span>
+        </div>
+        <div>
+          <span class="text-gray-500 block font-medium">Department:</span>
+          <span class="font-semibold text-zinc-800">IMAC, UET Lahore</span>
+        </div>
+        <div>
+          <span class="text-gray-500 block font-medium">Submission Date:</span>
+          <span class="font-semibold text-zinc-800">October 2026</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==========================================
+         OFFICIAL SUBMISSION LINKS
+    =========================================== -->
+    <section class="bg-blue-50 border border-blue-200 rounded-lg p-5">
+      <h3 class="text-xs font-bold uppercase tracking-wider text-blue-900 mb-3">Official Assignment Links</h3>
+      <div class="space-y-2 text-xs">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-white p-3 rounded border border-blue-100 gap-2">
+          <div>
+            <span class="font-bold text-zinc-900 block">1. Live Website Deployment Link (GitHub Pages):</span>
+            <a href="https://afeefulhussain.github.io/axon-website/" target="_blank" class="text-blue-600 font-mono hover:underline break-all">
+              https://afeefulhussain.github.io/axon-website/
+            </a>
+          </div>
+          <span class="bg-green-100 text-green-800 font-bold px-2.5 py-1 rounded text-[11px] self-start sm:self-auto">Status: 200 OK Live</span>
+        </div>
+
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-white p-3 rounded border border-blue-100 gap-2">
+          <div>
+            <span class="font-bold text-zinc-900 block">2. GitHub Public Source Code Repository:</span>
+            <a href="https://github.com/afeefulhussain/axon-website" target="_blank" class="text-blue-600 font-mono hover:underline break-all">
+              https://github.com/afeefulhussain/axon-website
+            </a>
+          </div>
+          <span class="bg-zinc-100 text-zinc-800 font-bold px-2.5 py-1 rounded text-[11px] self-start sm:self-auto">Public Repo</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PROJECT OVERVIEW
+    =========================================== -->
+    <section class="space-y-3">
+      <h3 class="text-base font-bold text-zinc-900 border-b border-gray-200 pb-2">1. Project Overview & Society Description</h3>
+      <p class="text-xs text-gray-700 leading-relaxed">
+        <strong>AXON</strong> is the official student-led technical society founded in <strong>2026</strong> under the <strong>Institute of Machine Learning, Artificial Intelligence & Cyber Security (IMAC)</strong> at the University of Engineering and Technology (UET) Lahore. Guided by the motto <em>"Learn by Building, Grow by Connecting"</em>, the society bridges regular academic curricula with practical software execution, collaborative Git repositories, and competitive development.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-2">
+        <div class="p-3 bg-gray-50 rounded border border-gray-200 text-xs">
+          <strong class="block text-zinc-900 mb-1">Web & Software Engineering</strong>
+          <p class="text-gray-600">Responsive frontend architecture, semantic HTML5, and utility-first Tailwind CSS.</p>
+        </div>
+        <div class="p-3 bg-gray-50 rounded border border-gray-200 text-xs">
+          <strong class="block text-zinc-900 mb-1">Foundational AI & Core Coding</strong>
+          <p class="text-gray-600">Python algorithmic thinking and computational foundations for machine learning.</p>
+        </div>
+        <div class="p-3 bg-gray-50 rounded border border-gray-200 text-xs">
+          <strong class="block text-zinc-900 mb-1">Departmental Engagement</strong>
+          <p class="text-gray-600">Connecting IMAC undergraduates with industry workshops, software houses, and alumni.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PROJECT FOLDER STRUCTURE
+    =========================================== -->
+    <section class="space-y-3">
+      <h3 class="text-base font-bold text-zinc-900 border-b border-gray-200 pb-2">2. Project Folder Structure</h3>
+      <p class="text-xs text-gray-700">The project maintains a clean, modular folder hierarchy conforming strictly to professional web standards:</p>
+      
+      <pre class="bg-zinc-900 text-gray-200 p-4 rounded-lg text-xs font-mono overflow-x-auto leading-relaxed">
+d:\axon\axon website\
+│
+├── index.html                      # 1. Home Page
+├── README.md                       # Comprehensive Assignment Documentation
+├── .gitignore                      # Git configuration for clean version control
+│
+├── assets\
+│   ├── logo.png                    # AXON mechanical gear & AI emblem (86 KB)
+│   ├── favicon.png                 # Browser tab favicon
+│   └── css\
+│       └── style.css               # Smooth scrolling & baseline styling
+│
+└── pages\
+    ├── about.html                  # 2. About Us Page (2026 Foundation Roadmap)
+    ├── contact.html                # 3. Contact Us Page (Connected to Google Form)
+    ├── signin.html                 # 4. Member Sign In Dashboard
+    └── signup.html                 # 5. Join Society / Registration (Connected to Google Form)</pre>
+    </section>
+
+    <!-- ==========================================
+         TAILWIND COMPONENTS TABLE
+    =========================================== -->
+    <section class="space-y-4 page-break">
+      <h3 class="text-base font-bold text-zinc-900 border-b border-gray-200 pb-2">3. 10+ Tailwind CSS UI Components Breakdown (Per Page)</h3>
+      <p class="text-xs text-gray-700">The assignment requires at least 10 distinct Tailwind CSS UI components per page. Every page in this project contains 10 to 14 components:</p>
+
+      <div class="overflow-x-auto border border-gray-200 rounded-lg">
+        <table class="min-w-full text-xs text-left">
+          <thead class="bg-zinc-900 text-white font-semibold">
+            <tr>
+              <th class="py-2.5 px-3">Page</th>
+              <th class="py-2.5 px-3 text-center">Components</th>
+              <th class="py-2.5 px-3">Detailed UI Components Implemented</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200 text-gray-700">
+            <tr class="hover:bg-gray-50">
+              <td class="py-2.5 px-3 font-bold text-zinc-900">1. Home (`index.html`)</td>
+              <td class="py-2.5 px-3 text-center font-bold text-blue-600">10</td>
+              <td class="py-2.5 px-3">Sticky Navbar, Hero Container, Primary Button, Outline Button, Alert Info Banner, 4-Card Stats Grid, 3-Card Focus Area Grid, Quote Box, FAQ Accordion (`&lt;details&gt;`), 3-Column Footer.</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="py-2.5 px-3 font-bold text-zinc-900">2. About Us (`pages/about.html`)</td>
+              <td class="py-2.5 px-3 text-center font-bold text-blue-600">11</td>
+              <td class="py-2.5 px-3">Navbar, Breadcrumb Bar, Hero Header, Mission Card, 3-Pillar Cards, Society Wings Badges, Council Profile Grid, 2026 Roadmap Cards, CTA Card, CTA Button, Footer.</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="py-2.5 px-3 font-bold text-zinc-900">3. Contact Us (`pages/contact.html`)</td>
+              <td class="py-2.5 px-3 text-center font-bold text-blue-600">11</td>
+              <td class="py-2.5 px-3">Navbar, Breadcrumb, Hero Banner, 3 Channel Cards, Form Card, Styled Inputs, Textarea, External Form Button, Campus Location Card, FAQ Accordion, Footer.</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="py-2.5 px-3 font-bold text-zinc-900">4. Sign In (`pages/signin.html`)</td>
+              <td class="py-2.5 px-3 text-center font-bold text-blue-600">11</td>
+              <td class="py-2.5 px-3">Navbar, Breadcrumb, Benefits Column, Login Container, Text Input, Password Field, "Remember Me" Checkbox, Submit Button, Alert Box, Register Callout Card, Footer.</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="py-2.5 px-3 font-bold text-zinc-900">5. Join Society (`pages/signup.html`)</td>
+              <td class="py-2.5 px-3 text-center font-bold text-blue-600">14</td>
+              <td class="py-2.5 px-3">Navbar, Breadcrumbs, Benefits Card, Bullet List, Already Registered Box, Form Card, Green Success Alert, Text Inputs, Semester Dropdown, 11-Domain Checkbox Grid, Radio Group, Agreement Checkbox, Submit Button, Footer.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         HEADLESS GOOGLE FORM INTEGRATION
+    =========================================== -->
+    <section class="space-y-3">
+      <h3 class="text-base font-bold text-zinc-900 border-b border-gray-200 pb-2">4. Headless Google Forms Backend Architecture</h3>
+      <p class="text-xs text-gray-700 leading-relaxed">
+        Both interactive forms on the website are powered by an advanced <strong>headless submission pipeline</strong>. When a student submits either form, data is dispatched directly to Google Forms' <code>formResponse</code> endpoint targeting a hidden <code>&lt;iframe&gt;</code>.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+        <div class="bg-gray-50 p-3 rounded border border-gray-200">
+          <strong class="text-zinc-900 block mb-1">Registration Form (`pages/signup.html`)</strong>
+          <ul class="list-disc list-inside space-y-1 text-gray-600 text-[11px]">
+            <li>Full Name (<code>entry.194799993</code>)</li>
+            <li>Roll Number (<code>entry.1509153094</code>)</li>
+            <li>Official Email (<code>entry.1710915499</code> & <code>emailAddress</code>)</li>
+            <li>Password (<code>entry.1939020738</code>)</li>
+            <li>WhatsApp Contact (<code>entry.1271692415</code>)</li>
+            <li>Current Semester (<code>entry.920465027</code>)</li>
+            <li>11 Skill Domains (<code>entry.1796528477</code>)</li>
+            <li>Programming Experience (<code>entry.1945902891</code>)</li>
+            <li>Code of Conduct Agreement (<code>entry.890987086</code>)</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-50 p-3 rounded border border-gray-200">
+          <strong class="text-zinc-900 block mb-1">Contact Inquiry Form (`pages/contact.html`)</strong>
+          <ul class="list-disc list-inside space-y-1 text-gray-600 text-[11px]">
+            <li>Student Name (<code>entry.367302119</code>)</li>
+            <li>Email Address (<code>entry.1837688206</code>)</li>
+            <li>Inquiry Subject (<code>entry.892232999</code>)</li>
+            <li>Message Details (<code>entry.1741666240</code>)</li>
+            <li>Live response code: <strong>HTTP 200 OK Verified</strong></li>
+            <li>Instant feedback banner with zero redirect</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SCREENSHOT PLACEHOLDERS SECTION
+    =========================================== -->
+    <section class="space-y-6 page-break">
+      <h3 class="text-base font-bold text-zinc-900 border-b border-gray-200 pb-2">5. Visual Verification & Screenshots</h3>
+      <p class="text-xs text-gray-600">The following placeholders correspond to required visual verification for the submission:</p>
+
+      <!-- Screenshot 1 -->
+      <div class="border border-gray-200 rounded-lg p-4 bg-gray-50">
+        <h4 class="text-xs font-bold text-zinc-900 mb-2">Screenshot 1: VS Code Workspace & Folder Structure</h4>
+        <div class="screenshot-box bg-white border-2 border-dashed border-gray-300 rounded p-6 text-center text-xs text-gray-400 flex flex-col items-center justify-center min-h-[140px]">
+          <p class="font-semibold text-gray-600">VS Code File Explorer Screenshot</p>
+          <p class="text-[11px] text-gray-400 mt-1">Showing <code>index.html</code>, <code>pages/</code>, <code>assets/</code>, and <code>README.md</code></p>
+        </div>
+      </div>
+
+      <!-- Screenshot 2 -->
+      <div class="border border-gray-200 rounded-lg p-4 bg-gray-50">
+        <h4 class="text-xs font-bold text-zinc-900 mb-2">Screenshot 2: Home Page Front / Hero Section (`index.html`)</h4>
+        <div class="screenshot-box bg-white border-2 border-dashed border-gray-300 rounded p-6 text-center text-xs text-gray-400 flex flex-col items-center justify-center min-h-[140px]">
+          <p class="font-semibold text-gray-600">Home Page Hero & Stats Counter Screenshot</p>
+          <p class="text-[11px] text-gray-400 mt-1">Showing AXON Logo, Navigation Bar, Hero Title, and Stats Cards</p>
+        </div>
+      </div>
+
+      <!-- Screenshot 3 -->
+      <div class="border border-gray-200 rounded-lg p-4 bg-gray-50">
+        <h4 class="text-xs font-bold text-zinc-900 mb-2">Screenshot 3: About Us Page (`pages/about.html`)</h4>
+        <div class="screenshot-box bg-white border-2 border-dashed border-gray-300 rounded p-6 text-center text-xs text-gray-400 flex flex-col items-center justify-center min-h-[140px]">
+          <p class="font-semibold text-gray-600">About Page & 2026 Foundation Roadmap Screenshot</p>
+          <p class="text-[11px] text-gray-400 mt-1">Showing Mission Statement, 4 Technical Wings, and 2026 Milestones</p>
+        </div>
+      </div>
+
+      <!-- Screenshot 4 -->
+      <div class="border border-gray-200 rounded-lg p-4 bg-gray-50">
+        <h4 class="text-xs font-bold text-zinc-900 mb-2">Screenshot 4: Contact Us Page (`pages/contact.html`)</h4>
+        <div class="screenshot-box bg-white border-2 border-dashed border-gray-300 rounded p-6 text-center text-xs text-gray-400 flex flex-col items-center justify-center min-h-[140px]">
+          <p class="font-semibold text-gray-600">Contact Channels & Headless Query Form Screenshot</p>
+          <p class="text-[11px] text-gray-400 mt-1">Showing Contact Cards, Query Inputs, and Campus Location Details</p>
+        </div>
+      </div>
+
+      <!-- Screenshot 5 -->
+      <div class="border border-gray-200 rounded-lg p-4 bg-gray-50">
+        <h4 class="text-xs font-bold text-zinc-900 mb-2">Screenshot 5: Member Sign In Page (`pages/signin.html`)</h4>
+        <div class="screenshot-box bg-white border-2 border-dashed border-gray-300 rounded p-6 text-center text-xs text-gray-400 flex flex-col items-center justify-center min-h-[140px]">
+          <p class="font-semibold text-gray-600">Member Sign In Dashboard Screenshot</p>
+          <p class="text-[11px] text-gray-400 mt-1">Showing Two-column Layout, Portal Features, and Form Inputs</p>
+        </div>
+      </div>
+
+      <!-- Screenshot 6 -->
+      <div class="border border-gray-200 rounded-lg p-4 bg-gray-50">
+        <h4 class="text-xs font-bold text-zinc-900 mb-2">Screenshot 6: Join AXON Registration Form (`pages/signup.html`)</h4>
+        <div class="screenshot-box bg-white border-2 border-dashed border-gray-300 rounded p-6 text-center text-xs text-gray-400 flex flex-col items-center justify-center min-h-[140px]">
+          <p class="font-semibold text-gray-600">Registration Form & 11 Skill Domains Screenshot</p>
+          <p class="text-[11px] text-gray-400 mt-1">Showing Multi-section Inputs, Checkbox Grid, and Live Submission Success</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONCLUSION / FOOTER
+    =========================================== -->
+    <footer class="pt-6 border-t border-gray-200 text-xs text-gray-500 flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div>
+        &copy; 2026 AXON Technical Society — IMAC, UET Lahore.
+      </div>
+      <div>
+        Web Technologies Assignment 01 &bull; Submission Report
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
