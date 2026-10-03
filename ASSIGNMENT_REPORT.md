@@ -201,12 +201,20 @@ Both interactive forms (`pages/signup.html` and `pages/contact.html`) are integr
 ---
 
 ### Screenshot 6: Member Sign In Page (`pages/signin.html`)
-*(Ready for upload — image will appear here once provided)*
+![Member Sign In Page](assets/screenshots/signin_page.png)
+*Figure 6: Member sign in portal interface displaying two-column layout, privileges, and credentials form.*
 
 ---
 
 ### Screenshot 7: Join Society Registration Page (`pages/signup.html`)
-*(Ready for upload — image will appear here once provided)*
+![Join Society Registration Page](assets/screenshots/signup_page.png)
+*Figure 7: Complete member registration form showcasing student identification, 11 skill checkboxes, and academic agreement.*
+
+---
+
+### Screenshot 8: Registration Backend Proof (6 Responses in Google Forms)
+![Google Forms Registration Responses](assets/screenshots/google_form_registration_responses.png)
+*Figure 8: Live Google Form backend verification displaying 6 recorded member registration submissions.*
 
 ---
 
