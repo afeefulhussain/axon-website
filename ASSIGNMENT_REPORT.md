@@ -170,35 +170,43 @@ Both interactive forms (`pages/signup.html` and `pages/contact.html`) are integr
 
 ## 8. Verification & Screenshots
 
-*(Please paste your screenshots into the designated placeholders below or into your submission PDF)*
-
-### Screenshot 1: VS Code Project Workspace & Folder Structure
-*(Screenshot showing VS Code open with the full file tree: `index.html`, `pages/`, `assets/`, `README.md`)*
+### Screenshot 1: VS Code Project Workspace & Code Architecture
+![VS Code Workspace](assets/screenshots/vscode_code.png)
+*Figure 1: VS Code editor displaying project workspace, HTML5 code structure, and semantic markup.*
 
 ---
 
 ### Screenshot 2: Home Page (`index.html`)
-*(Screenshot showing Navbar, Hero Section, Live Update Banner, and Stats Grid)*
+![Home Page](assets/screenshots/home_page.png)
+*Figure 2: Home page showcasing official AXON logo, responsive navbar, hero section, live update banner, and stats counter grid.*
 
 ---
 
 ### Screenshot 3: About Us Page (`pages/about.html`)
-*(Screenshot showing Breadcrumb, Mission Card, Society Wings, and 2026 Foundation Roadmap)*
+![About Us Page](assets/screenshots/about_page.png)
+*Figure 3: About Us page displaying breadcrumb navigation, official motto, core pillars, and technical wings badges.*
 
 ---
 
 ### Screenshot 4: Contact Us Page (`pages/contact.html`)
-*(Screenshot showing Contact Channels, Interactive Query Form, Location, and FAQ)*
+![Contact Us Page](assets/screenshots/contact_page.png)
+*Figure 4: Contact page displaying communication channels, headless inquiry form, campus location, and help FAQ accordion.*
 
 ---
 
-### Screenshot 5: Member Sign In Page (`pages/signin.html`)
-*(Screenshot showing Two-column layout, Portal Privileges, and Login Form)*
+### Screenshot 5: Backend Live Response Verification
+![Google Form Live Responses](assets/screenshots/google_form_responses.png)
+*Figure 5: Live Google Form backend responses confirming instant cross-origin data recording with 0% Google branding.*
 
 ---
 
-### Screenshot 6: Join Society Page (`pages/signup.html`)
-*(Screenshot showing Multi-section Registration Form, 11 Skill Checkboxes, and Green Success Banner)*
+### Screenshot 6: Member Sign In Page (`pages/signin.html`)
+*(Ready for upload — image will appear here once provided)*
+
+---
+
+### Screenshot 7: Join Society Registration Page (`pages/signup.html`)
+*(Ready for upload — image will appear here once provided)*
 
 ---
 
