@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - AXON | IMAC UET Lahore</title>
+  <!-- Favicon using official AXON Logo -->
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+  <!-- ==========================================
+       COMPONENT 1: NAVBAR
+  =========================================== -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex justify-between items-center h-16">
+        
+        <!-- Official Logo & Branding -->
+        <a href="../index.html" class="flex items-center space-x-3">
+          <img src="../assets/logo.png" alt="AXON Logo" class="h-10 w-auto object-contain">
+          <div>
+            <span class="text-xl font-black text-zinc-900 tracking-tight">AXON</span>
+            <span class="text-xs text-gray-500 block -mt-1 font-semibold tracking-wider">IMAC • UET LAHORE</span>
+          </div>
+        </a>
+
+        <!-- Nav Links -->
+        <div class="flex items-center space-x-1 sm:space-x-4">
+          <a href="../index.html" class="text-gray-600 hover:text-zinc-900 px-3 py-2 text-sm font-medium transition">Home</a>
+          <a href="about.html" class="text-gray-600 hover:text-zinc-900 px-3 py-2 text-sm font-medium transition">About</a>
+          <a href="contact.html" class="text-zinc-900 font-bold px-3 py-2 text-sm border-b-2 border-zinc-900">Contact</a>
+          <a href="signin.html" class="text-gray-600 hover:text-zinc-900 px-3 py-2 text-sm font-medium transition">Sign In</a>
+          <a href="signup.html" class="bg-zinc-900 hover:bg-black text-white px-4 py-2 rounded-md text-sm font-medium transition">Join Us</a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+
+    <!-- ==========================================
+         COMPONENT 2: BREADCRUMB
+    =========================================== -->
+    <div class="bg-gray-100 border-b border-gray-200 py-2.5">
+      <div class="max-w-6xl mx-auto px-4 text-xs text-gray-500">
+        <a href="../index.html" class="hover:text-zinc-900">Home</a>
+        <span class="mx-1 text-gray-400">/</span>
+        <span class="text-zinc-900 font-semibold">Contact Us</span>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         COMPONENT 3: CONTACT HERO BANNER
+    =========================================== -->
+    <section class="bg-white border-b border-gray-200 py-12">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h1 class="text-3xl sm:text-4xl font-black text-zinc-900">Contact AXON Council</h1>
+        <p class="text-sm text-gray-600 mt-2 max-w-xl mx-auto">
+          Have questions about bootcamps, workshops, or joining an AXON wing? Send us a message or visit the IMAC department.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         COMPONENT 4: CONTACT CARDS GRID
+    =========================================== -->
+    <section class="py-8">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          
+          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm text-center">
+            <h4 class="text-sm font-bold text-zinc-900">General Queries</h4>
+            <a href="mailto:axon.uet@gmail.com" class="text-xs text-zinc-600 hover:text-black hover:underline mt-1 block">axon.uet@gmail.com</a>
+          </div>
+
+          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm text-center">
+            <h4 class="text-sm font-bold text-zinc-900">Technical Wing</h4>
+            <a href="mailto:axon.uet@gmail.com" class="text-xs text-zinc-600 hover:text-black hover:underline mt-1 block">axon.uet@gmail.com</a>
+          </div>
+
+          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm text-center">
+            <h4 class="text-sm font-bold text-zinc-900">IMAC Department</h4>
+            <a href="mailto:imac@uet.edu.pk" class="text-xs text-zinc-600 hover:text-black hover:underline mt-1 block">imac@uet.edu.pk</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN FORM & SIDEBAR -->
+    <section class="py-6 pb-12">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+          <!-- ==========================================
+               COMPONENT 5: CONTACT FORM CONTAINER CARD
+          =========================================== -->
+          <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-xl border border-gray-200 shadow-sm">
+            
+            <!-- COMPONENT 6: SUCCESS NOTIFICATION BANNER (Hidden by default) -->
+            <div id="contact-success" class="hidden mb-6 p-4 rounded-lg bg-green-50 border border-green-200 text-green-900">
+              <div class="flex items-start">
+                <span class="w-2.5 h-2.5 rounded-full bg-green-600 mt-1 mr-3 flex-shrink-0"></span>
+                <div>
+                  <h4 class="text-sm font-bold">Message Sent Successfully!</h4>
+                  <p class="text-xs text-green-700 mt-0.5">
+                    Thank you for contacting the AXON Council. Your query has been recorded in our records and we will get back to your email shortly.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-b border-gray-100 pb-4 mb-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h3 class="text-xl font-bold text-zinc-900">Send a Message</h3>
+                  <p class="text-xs text-gray-500 mt-0.5">Reach out to the AXON executive council with your question</p>
+                </div>
+                <span class="text-xs bg-zinc-900 text-white font-medium px-2.5 py-1 rounded">
+                  Contact Form
+                </span>
+              </div>
+            </div>
+
+            <!-- HIDDEN IFRAME FOR BACKGROUND SUBMISSION (ZERO GOOGLE BRANDING, ZERO REDIRECT) -->
+            <iframe name="contact_hidden_iframe" id="contact_hidden_iframe" class="hidden" style="display:none;"></iframe>
+
+            <form 
+              id="contact-form"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSc8TwkvgrFD_iw-TvUmLDPYdQEtlUjs5d790Ztq3obblG2-6w/formResponse" 
+              method="POST" 
+              target="contact_hidden_iframe"
+              onsubmit="return handleContactSubmit();"
+              class="space-y-4">
+
+              <!-- Google Form Backend Control Fields -->
+              <input type="hidden" name="fvv" value="1">
+              <input type="hidden" name="pageHistory" value="0">
+
+              <!-- COMPONENT 7: NAME & EMAIL INPUTS -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="contact-name" class="block text-xs font-semibold text-zinc-800 mb-1">Full Name <span class="text-red-500">*</span></label>
+                  <input 
+                    type="text" 
+                    id="contact-name" 
+                    name="entry.367302119"
+                    required 
+                    placeholder="Muhammad Ali" 
+                    class="w-full px-3 py-2 text-xs border border-gray-300 rounded-md focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900">
+                </div>
+
+                <div>
+                  <label for="contact-email" class="block text-xs font-semibold text-zinc-800 mb-1">Email Address <span class="text-red-500">*</span></label>
+                  <input 
+                    type="email" 
+                    id="contact-email" 
+                    name="entry.1837688206"
+                    required 
+                    placeholder="student@uet.edu.pk" 
+                    class="w-full px-3 py-2 text-xs border border-gray-300 rounded-md focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900">
+                </div>
+              </div>
+
+              <!-- COMPONENT 8: SUBJECT INPUT -->
+              <div>
+                <label for="contact-subject" class="block text-xs font-semibold text-zinc-800 mb-1">Subject <span class="text-red-500">*</span></label>
+                <input 
+                  type="text" 
+                  id="contact-subject" 
+                  name="entry.892232999"
+                  required 
+                  placeholder="Inquiry regarding AI bootcamp / Workshop registration" 
+                  class="w-full px-3 py-2 text-xs border border-gray-300 rounded-md focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900">
+              </div>
+
+              <!-- COMPONENT 9: MESSAGE TEXTAREA -->
+              <div>
+                <label for="contact-msg" class="block text-xs font-semibold text-zinc-800 mb-1">Message Details <span class="text-red-500">*</span></label>
+                <textarea 
+                  id="contact-msg" 
+                  name="entry.1741666240"
+                  rows="4" 
+                  required 
+                  placeholder="Write your message or inquiry here..." 
+                  class="w-full px-3 py-2 text-xs border border-gray-300 rounded-md focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900 resize-none"></textarea>
+              </div>
+
+              <!-- COMPONENT 10: SUBMIT BUTTON -->
+              <div class="pt-2">
+                <button 
+                  id="contact-submit-btn"
+                  type="submit" 
+                  class="w-full bg-zinc-900 hover:bg-black text-white text-xs font-semibold py-3 px-4 rounded-md transition shadow-sm hover:shadow">
+                  Send Message to AXON Council &rarr;
+                </button>
+                <p class="text-[11px] text-gray-400 text-center mt-2">
+                  Data is securely recorded directly in AXON Department records & Google Sheets in real time.
+                </p>
+              </div>
+            </form>
+
+          </div>
+
+          <!-- SIDEBAR CARDS -->
+          <div class="lg:col-span-5 space-y-4">
+            
+            <!-- COMPONENT 9: CAMPUS LOCATION CARD -->
+            <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
+              <h4 class="text-sm font-bold text-zinc-900 mb-2">Campus Location</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">
+                Institute of Machine Learning, AI & Cyber Security (IMAC),<br>
+                University of Engineering and Technology (UET),<br>
+                G.T. Road, Lahore, 54890, Pakistan.
+              </p>
+              <div class="mt-3 pt-3 border-t border-gray-100">
+                <a href="https://maps.google.com/?q=UET+Lahore" target="_blank" class="text-xs text-zinc-900 font-semibold hover:underline">
+                  View UET Lahore on Google Maps &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- COMPONENT 10: FAQ ACCORDION -->
+            <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
+              <h4 class="text-sm font-bold text-zinc-900 mb-3">Quick Help FAQ</h4>
+              
+              <div class="space-y-2">
+                <details class="bg-gray-50 p-2.5 rounded border border-gray-200 cursor-pointer text-xs">
+                  <summary class="font-semibold text-gray-800 list-none flex justify-between">
+                    <span>How to register for bootcamps?</span>
+                    <span>▼</span>
+                  </summary>
+                  <p class="text-gray-600 mt-1.5 pt-1.5 border-t border-gray-200">
+                    You can register via the Join Us page or check announcement links posted in the UET WhatsApp groups.
+                  </p>
+                </details>
+
+                <details class="bg-gray-50 p-2.5 rounded border border-gray-200 cursor-pointer text-xs">
+                  <summary class="font-semibold text-gray-800 list-none flex justify-between">
+                    <span>Where are workshops held?</span>
+                    <span>▼</span>
+                  </summary>
+                  <p class="text-gray-600 mt-1.5 pt-1.5 border-t border-gray-200">
+                    Most sessions take place inside IMAC Computer Lab 2 and the Seminar Room at UET Lahore.
+                  </p>
+                </details>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       COMPONENT 11: FOOTER
+  =========================================== -->
+  <footer class="bg-zinc-950 text-gray-300 text-sm py-8 border-t border-zinc-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        
+        <div>
+          <div class="flex items-center space-x-2 mb-2">
+            <img src="../assets/logo.png" alt="AXON Logo" class="h-6 w-auto invert brightness-200">
+            <h4 class="text-white font-bold">AXON Technical Society</h4>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Institute of Machine Learning, Artificial Intelligence & Cyber Security (IMAC), University of Engineering and Technology (UET) Lahore.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-2">Quick Links</h4>
+          <ul class="text-xs space-y-1.5 text-gray-400">
+            <li><a href="../index.html" class="hover:text-white">Home</a></li>
+            <li><a href="about.html" class="hover:text-white">About AXON</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+            <li><a href="signin.html" class="hover:text-white">Member Sign In</a></li>
+            <li><a href="signup.html" class="hover:text-white">Join Society</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-2">Campus Location</h4>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            IMAC Department, UET Lahore,<br>
+            G.T. Road, Lahore, Pakistan.<br>
+            Email: <a href="mailto:axon.uet@gmail.com" class="text-zinc-300 hover:underline">axon.uet@gmail.com</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="border-t border-zinc-900 pt-4 text-center text-xs text-gray-500">
+        &copy; 2026 AXON — IMAC, UET Lahore. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleContactSubmit() {
+      document.getElementById('contact-success').classList.remove('hidden');
+      const btn = document.getElementById('contact-submit-btn');
+      btn.innerText = 'Message Sent Successfully!';
+      btn.disabled = true;
+      btn.classList.remove('bg-zinc-900', 'hover:bg-black');
+      btn.classList.add('bg-green-700', 'cursor-not-allowed');
+      window.scrollTo({top: 150, behavior: 'smooth'});
+      return true;
+    }
+  </script>
+</body>
+</html>

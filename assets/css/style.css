@@ -1,0 +1,8 @@
+/* Basic Styles for Axon Website */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}

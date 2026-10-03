@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Us - AXON | IMAC UET Lahore</title>
+  <!-- Favicon using official AXON Logo -->
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+  <!-- ==========================================
+       COMPONENT 1: NAVBAR
+  =========================================== -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex justify-between items-center h-16">
+        
+        <!-- Official Logo & Branding -->
+        <a href="../index.html" class="flex items-center space-x-3">
+          <img src="../assets/logo.png" alt="AXON Logo" class="h-10 w-auto object-contain">
+          <div>
+            <span class="text-xl font-black text-zinc-900 tracking-tight">AXON</span>
+            <span class="text-xs text-gray-500 block -mt-1 font-semibold tracking-wider">IMAC • UET LAHORE</span>
+          </div>
+        </a>
+
+        <!-- Nav Links -->
+        <div class="flex items-center space-x-1 sm:space-x-4">
+          <a href="../index.html" class="text-gray-600 hover:text-zinc-900 px-3 py-2 text-sm font-medium transition">Home</a>
+          <a href="about.html" class="text-gray-600 hover:text-zinc-900 px-3 py-2 text-sm font-medium transition">About</a>
+          <a href="contact.html" class="text-gray-600 hover:text-zinc-900 px-3 py-2 text-sm font-medium transition">Contact</a>
+          <a href="signin.html" class="text-gray-600 hover:text-zinc-900 px-3 py-2 text-sm font-medium transition">Sign In</a>
+          <a href="signup.html" class="bg-zinc-900 hover:bg-black text-white px-4 py-2 rounded-md text-sm font-medium transition">Join Us</a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow py-8">
+
+    <!-- ==========================================
+         COMPONENT 2: BREADCRUMB
+    =========================================== -->
+    <div class="max-w-5xl mx-auto px-4 mb-6">
+      <div class="text-xs text-gray-500">
+        <a href="../index.html" class="hover:text-zinc-900">Home</a>
+        <span class="mx-1 text-gray-400">/</span>
+        <span class="text-zinc-900 font-semibold">Join AXON</span>
+      </div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+
+        <!-- ==========================================
+             COMPONENT 3: LEFT BENEFITS CARD
+        =========================================== -->
+        <div class="md:col-span-4 space-y-4">
+          <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+            <h2 class="text-xl font-bold text-zinc-900">Why Join AXON?</h2>
+            <p class="text-xs text-gray-600 mt-1 leading-relaxed">
+              "Learn by Building, Grow by Connecting." Become part of UET's premier technical community at IMAC.
+            </p>
+
+            <!-- COMPONENT 4: FEATURE LIST -->
+            <ul class="text-xs text-gray-600 space-y-2.5 mt-4">
+              <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-zinc-900 mr-2.5 inline-block"></span> Free hands-on coding bootcamps</li>
+              <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-zinc-900 mr-2.5 inline-block"></span> Work on real project repositories</li>
+              <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-zinc-900 mr-2.5 inline-block"></span> Mentorship from senior students</li>
+              <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-zinc-900 mr-2.5 inline-block"></span> No membership or registration fees</li>
+            </ul>
+
+            <div class="mt-4 pt-3 border-t border-gray-100 text-xs text-gray-500">
+              Official student technical society of IMAC, UET Lahore.
+            </div>
+          </div>
+
+          <!-- COMPONENT 5: ALREADY REGISTERED CARD -->
+          <div class="bg-white p-4 rounded-xl border border-gray-200 text-center text-xs text-gray-600">
+            Already registered with AXON? 
+            <a href="signin.html" class="text-zinc-900 font-bold hover:underline">Log in to Portal &rarr;</a>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             COMPONENT 6: CUSTOM REGISTRATION FORM CONTAINER
+        =========================================== -->
+        <div class="md:col-span-8 bg-white p-6 sm:p-8 rounded-xl border border-gray-200 shadow-sm">
+          
+          <!-- COMPONENT 7: SUCCESS NOTIFICATION BANNER (Hidden by default) -->
+          <div id="success-alert" class="hidden mb-6 p-4 rounded-lg bg-green-50 border border-green-200 text-green-900">
+            <div class="flex items-start">
+              <span class="w-2.5 h-2.5 rounded-full bg-green-600 mt-1 mr-3 flex-shrink-0"></span>
+              <div>
+                <h4 class="text-sm font-bold">Registration Submitted Successfully!</h4>
+                <p class="text-xs text-green-700 mt-0.5">
+                  Welcome to AXON IMAC! Your details have been submitted and recorded in real time. We will reach out to your official email and WhatsApp group shortly.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-b border-gray-100 pb-4 mb-6">
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-zinc-900">Student Membership Registration</h3>
+                <p class="text-xs text-gray-500 mt-0.5">Join AXON Technical Society — IMAC, UET Lahore</p>
+              </div>
+              <span class="text-xs bg-zinc-900 text-white font-medium px-2.5 py-1 rounded">
+                Official Form
+              </span>
+            </div>
+          </div>
+
+          <!-- HIDDEN IFRAME FOR BACKGROUND SUBMISSION (ZERO REDIRECT, ZERO GOOGLE BRANDING) -->
+          <iframe name="hidden_iframe" id="hidden_iframe" class="hidden" style="display:none;"></iframe>
+
+          <form 
+            id="registration-form"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSenPCvSY0g_Gxleh6bG6nlFg_p8VTT6an-kSU5RLAT4O4k9MA/formResponse" 
+            method="POST" 
+            target="hidden_iframe"
+            onsubmit="return validateAndSubmitRegistration(event);"
+            class="space-y-6">
+
+            <!-- Google Form Backend Required Control Fields -->
+            <input type="hidden" name="fvv" value="1">
+            <input type="hidden" name="pageHistory" value="0">
+            <input type="hidden" name="emailAddress" id="hidden_email">
+
+            <!-- SECTION 1: STUDENT IDENTIFICATION & VERIFICATION -->
+            <div>
+              <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-500 mb-3">1. Student Identification & Verification</h4>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- COMPONENT 8: TEXT INPUT (FULL NAME) -->
+                <div>
+                  <label for="fullname" class="block text-xs font-semibold text-zinc-800 mb-1">Full Name <span class="text-red-500">*</span></label>
+                  <input 
+                    type="text" 
+                    id="fullname" 
+                    name="entry.194799993" 
+                    required 
+                    placeholder="e.g. Muhammad Ali" 
+                    class="w-full px-3 py-2 text-xs border border-gray-300 rounded-md focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900">
+                </div>
+
+                <!-- COMPONENT 8: TEXT INPUT (ROLL NUMBER) -->
+                <div>
+                  <label for="rollno" class="block text-xs font-semibold text-zinc-800 mb-1">Roll Number / Student ID <span class="text-red-500">*</span></label>
+                  <input 
+                    type="text" 
+                    id="rollno" 
+                    name="entry.1509153094" 
+                    required 
+                    placeholder="e.g. ADPCS21-042" 
+                    class="w-full px-3 py-2 text-xs border border-gray-300 rounded-md focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900">
+                </div>
+
+                <!-- COMPONENT 8: EMAIL INPUT -->
+                <div>
+                  <label for="email" class="block text-xs font-semibold text-zinc-800 mb-1">Official / Active Email Address <span class="text-red-500">*</span></label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="entry.1710915499" 
+                    required 
+                    placeholder="student@uet.edu.pk" 
+                    class="w-full px-3 py-2 text-xs border border-gray-300 rounded-md focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900">
+                </div>
+
+                <!-- COMPONENT 8: PASSWORD INPUT -->
+                <div>
+                  <label for="reg-password" class="block text-xs font-semibold text-zinc-800 mb-1">Account Password <span class="text-red-500">*</span></label>
+                  <input 
+                    type="password" 
+                    id="reg-password" 
+                    name="entry.1939020738" 
+                    required 
+                    placeholder="••••••••" 
+                    class="w-full px-3 py-2 text-xs border border-gray-300 rounded-md focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900">
+                </div>
+
+                <!-- COMPONENT 8: TEL INPUT -->
+                <div>
+                  <label for="phone" class="block text-xs font-semibold text-zinc-800 mb-1">WhatsApp Contact Number <span class="text-red-500">*</span></label>
+                  <input 
+                    type="tel" 
+                    id="phone" 
+                    name="entry.1271692415" 
+                    required 
+                    placeholder="0300-1234567" 
+                    class="w-full px-3 py-2 text-xs border border-gray-300 rounded-md focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900">
+                </div>
+
+                <!-- COMPONENT 9: SELECT DROPDOWN (SEMESTER) -->
+                <div>
+                  <label for="semester" class="block text-xs font-semibold text-zinc-800 mb-1">Current Semester <span class="text-red-500">*</span></label>
+                  <select 
+                    id="semester" 
+                    name="entry.920465027" 
+                    required 
+                    class="w-full px-3 py-2 text-xs border border-gray-300 rounded-md bg-white focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900">
+                    <option value="" disabled selected>Select semester</option>
+                    <option value="1st Semester">1st Semester</option>
+                    <option value="2nd Semester">2nd Semester</option>
+                    <option value="3rd Semester">3rd Semester</option>
+                    <option value="4th Semester">4th Semester</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 2: SKILL DOMAINS & STRENGTHS -->
+            <div class="pt-4 border-t border-gray-100">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-500 mb-1">2. Skill Domains & Strengths</h4>
+              <p class="text-xs text-gray-500 mb-3">Select all domains you are interested in contributing or developing:</p>
+
+              <!-- COMPONENT 10: CHECKBOX GRID -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                <label class="flex items-start space-x-2 p-2 rounded hover:bg-gray-50 cursor-pointer border border-gray-100">
+                  <input type="checkbox" name="entry.1796528477" value="Graphic Design (Canva / Photoshop / Illustrator)" class="mt-0.5 rounded text-zinc-900 focus:ring-zinc-900">
+                  <span class="text-gray-700">Graphic Design (Canva / Photoshop / Illustrator)</span>
+                </label>
+
+                <label class="flex items-start space-x-2 p-2 rounded hover:bg-gray-50 cursor-pointer border border-gray-100">
+                  <input type="checkbox" name="entry.1796528477" value="Video Editing & Content Creation (CapCut / Premiere Pro)" class="mt-0.5 rounded text-zinc-900 focus:ring-zinc-900">
+                  <span class="text-gray-700">Video Editing & Reels (CapCut / Premiere Pro)</span>
+                </label>
+
+                <label class="flex items-start space-x-2 p-2 rounded hover:bg-gray-50 cursor-pointer border border-gray-100">
+                  <input type="checkbox" name="entry.1796528477" value="Photography & Event Coverage" class="mt-0.5 rounded text-zinc-900 focus:ring-zinc-900">
+                  <span class="text-gray-700">Photography & Event Coverage</span>
+                </label>
+
+                <label class="flex items-start space-x-2 p-2 rounded hover:bg-gray-50 cursor-pointer border border-gray-100">
+                  <input type="checkbox" name="entry.1796528477" value="Content & Copywriting (Posts, Captions, Summaries)" class="mt-0.5 rounded text-zinc-900 focus:ring-zinc-900">
+                  <span class="text-gray-700">Content & Copywriting</span>
+                </label>
+
+                <label class="flex items-start space-x-2 p-2 rounded hover:bg-gray-50 cursor-pointer border border-gray-100">
+                  <input type="checkbox" name="entry.1796528477" value="Formal Drafting & Proposals (Departmental requests, Sponsor outreach)" class="mt-0.5 rounded text-zinc-900 focus:ring-zinc-900">
+                  <span class="text-gray-700">Formal Drafting & Proposals</span>
+                </label>
+
+                <label class="flex items-start space-x-2 p-2 rounded hover:bg-gray-50 cursor-pointer border border-gray-100">
+                  <input type="checkbox" name="entry.1796528477" value="Stage Hosting & Moderation (Anchoring / Public Speaking)" class="mt-0.5 rounded text-zinc-900 focus:ring-zinc-900">
+                  <span class="text-gray-700">Stage Hosting & Public Speaking</span>
+                </label>
+
+                <label class="flex items-start space-x-2 p-2 rounded hover:bg-gray-50 cursor-pointer border border-gray-100">
+                  <input type="checkbox" name="entry.1796528477" value="Event Logistics & On-Ground Coordination" class="mt-0.5 rounded text-zinc-900 focus:ring-zinc-900">
+                  <span class="text-gray-700">Event Logistics & On-Ground Coordination</span>
+                </label>
+
+                <label class="flex items-start space-x-2 p-2 rounded hover:bg-gray-50 cursor-pointer border border-gray-100">
+                  <input type="checkbox" name="entry.1796528477" value="Social Media & Community Support (WhatsApp / LinkedIn)" class="mt-0.5 rounded text-zinc-900 focus:ring-zinc-900">
+                  <span class="text-gray-700">Social Media & Community Support</span>
+                </label>
+
+                <label class="flex items-start space-x-2 p-2 rounded hover:bg-gray-50 cursor-pointer border border-gray-100">
+                  <input type="checkbox" name="entry.1796528477" value="Corporate Liaison (Connecting with software houses & alumni)" class="mt-0.5 rounded text-zinc-900 focus:ring-zinc-900">
+                  <span class="text-gray-700">Corporate Liaison & Alumni Outreach</span>
+                </label>
+
+                <label class="flex items-start space-x-2 p-2 rounded hover:bg-gray-50 cursor-pointer border border-gray-100">
+                  <input type="checkbox" name="entry.1796528477" value="Programming & Web Basics (Python / C++ / HTML / CSS / JS)" class="mt-0.5 rounded text-zinc-900 focus:ring-zinc-900">
+                  <span class="text-gray-700">Programming & Web Basics (Python/C++/Web)</span>
+                </label>
+
+                <label class="flex items-start space-x-2 p-2 rounded hover:bg-gray-50 cursor-pointer border border-gray-100 sm:col-span-2">
+                  <input type="checkbox" name="entry.1796528477" value="Data Handling & Office Tools (Google Forms / Sheets / Excel / Mail Merge)" class="mt-0.5 rounded text-zinc-900 focus:ring-zinc-900">
+                  <span class="text-gray-700">Data Handling & Office Tools (Sheets / Excel / Mail Merge)</span>
+                </label>
+              </div>
+
+              <!-- COMPONENT 11: RADIO BUTTON GROUP -->
+              <div class="mt-4 pt-3 border-t border-gray-100">
+                <label class="block text-xs font-semibold text-zinc-800 mb-2">Current Baseline Programming Experience <span class="text-red-500">*</span></label>
+                <div class="space-y-2 text-xs">
+                  <label class="flex items-center space-x-2 cursor-pointer">
+                    <input type="radio" name="entry.1945902891" value="Complete Beginner (Eager to learn fundamentals from scratch)" required class="text-zinc-900 focus:ring-zinc-900">
+                    <span class="text-gray-700">Complete Beginner (Eager to learn fundamentals from scratch)</span>
+                  </label>
+                  <label class="flex items-center space-x-2 cursor-pointer">
+                    <input type="radio" name="entry.1945902891" value="Basic (Familiar with core syntax in C / Python / HTML)" class="text-zinc-900 focus:ring-zinc-900">
+                    <span class="text-gray-700">Basic (Familiar with core syntax in C / Python / HTML)</span>
+                  </label>
+                  <label class="flex items-center space-x-2 cursor-pointer">
+                    <input type="radio" name="entry.1945902891" value="Intermediate (Have built small working programs / practice projects)" class="text-zinc-900 focus:ring-zinc-900">
+                    <span class="text-gray-700">Intermediate (Have built small working programs / practice projects)</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 3: COMMITMENT & ACADEMIC AGREEMENT -->
+            <div class="pt-4 border-t border-gray-100">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-500 mb-2">3. Commitment & Academic Agreement</h4>
+              
+              <!-- COMPONENT 12: AGREEMENT CHECKBOX -->
+              <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
+                <label class="flex items-start space-x-2 text-xs text-gray-700 cursor-pointer">
+                  <input 
+                    type="checkbox" 
+                    name="entry.890987086" 
+                    value="I confirm that I am a registered student in the IMAC Department, UET Lahore. I commit to attending scheduled technical sessions and maintaining academic and departmental discipline." 
+                    required 
+                    class="mt-0.5 rounded text-zinc-900 focus:ring-zinc-900">
+                  <span class="leading-relaxed">
+                    I confirm that I am a registered student in the IMAC Department, UET Lahore. I commit to attending scheduled technical sessions and maintaining academic and departmental discipline. <span class="text-red-500">*</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <!-- COMPONENT 13: SUBMIT BUTTON -->
+            <div class="pt-2">
+              <button 
+                id="submit-btn"
+                type="submit" 
+                class="w-full bg-zinc-900 hover:bg-black text-white text-xs font-semibold py-3 px-4 rounded-md transition shadow-sm hover:shadow">
+                Submit Registration to AXON IMAC &rarr;
+              </button>
+              <p class="text-[11px] text-gray-400 text-center mt-2">
+                Data is sent securely directly to AXON IMAC Department records & Google Sheets in real time.
+              </p>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ==========================================
+       COMPONENT 14: FOOTER
+  =========================================== -->
+  <footer class="bg-zinc-950 text-gray-300 text-sm py-8 border-t border-zinc-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        
+        <div>
+          <div class="flex items-center space-x-2 mb-2">
+            <img src="../assets/logo.png" alt="AXON Logo" class="h-6 w-auto invert brightness-200">
+            <h4 class="text-white font-bold">AXON Technical Society</h4>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Institute of Machine Learning, Artificial Intelligence & Cyber Security (IMAC), University of Engineering and Technology (UET) Lahore.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-2">Quick Links</h4>
+          <ul class="text-xs space-y-1.5 text-gray-400">
+            <li><a href="../index.html" class="hover:text-white">Home</a></li>
+            <li><a href="about.html" class="hover:text-white">About AXON</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+            <li><a href="signin.html" class="hover:text-white">Member Sign In</a></li>
+            <li><a href="signup.html" class="hover:text-white">Join Society</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-2">Campus Location</h4>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            IMAC Department, UET Lahore,<br>
+            G.T. Road, Lahore, Pakistan.<br>
+            Email: <a href="mailto:axon.uet@gmail.com" class="text-zinc-300 hover:underline">axon.uet@gmail.com</a>
+          </p>
+        </div>
+
+      </div>
+      
+      <div class="border-t border-zinc-900 pt-4 text-center text-xs text-gray-500">
+        &copy; 2026 AXON — IMAC, UET Lahore. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function validateAndSubmitRegistration(event) {
+      const skills = document.querySelectorAll('input[name="entry.1796528477"]:checked');
+      if (skills.length === 0) {
+        alert('Please select at least one Skill Domain from Section 2 before submitting.');
+        event.preventDefault();
+        return false;
+      }
+      document.getElementById('hidden_email').value = document.getElementById('email').value;
+      document.getElementById('success-alert').classList.remove('hidden');
+      const btn = document.getElementById('submit-btn');
+      btn.innerText = 'Application Submitted Successfully!';
+      btn.disabled = true;
+      btn.classList.remove('bg-zinc-900', 'hover:bg-black');
+      btn.classList.add('bg-green-700', 'cursor-not-allowed');
+      window.scrollTo({top: 120, behavior: 'smooth'});
+      return true;
+    }
+  </script>
+</body>
+</html>
